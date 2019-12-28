@@ -1,32 +1,32 @@
-$mobile-end: 568px;
-$tablet-end: 768px;
-/*
-l;sdjfgskl j;lsk fjglkshfdlgklksj hfjklsfh gkljhsdlkfj ghlskjdfhglkjh
+@import 'reset';
 
-*/
-body{
-  background-image: url('../images/banner.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+
+#pageHeader{
+  position: fixed;
+  top: 0;
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  align-content: flex-end;
+}
+.containerLogo{
+  padding: 10px;
+  width: 200px;
+}
+
+.navHeaderContainer {
+  display: flex;
+  flex-direction: row;
+  max-height: 100px;
+
+}
+
+#centerPageContainer{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-
-.test{
-  color: green;
-}
-
-@media screen and (max-width: $mobile-end) {
-  .test{
-    color: red;
-  }
-}
-
-@media screen and (max-width: $mobile-end) {
-  .test{
-    font-size: 60px;
-  }
+  position: relative;
+  width: 100%;
+  text-align: center;
 }
