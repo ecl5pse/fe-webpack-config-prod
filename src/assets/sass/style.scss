@@ -49,16 +49,16 @@
 
 #containerText {
   background-image: url("../images/banner.jpg");
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
-  text-align: center;
   top: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-
+  padding:100px ;
 
   button {
     background-color: #e84545;
