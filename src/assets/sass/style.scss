@@ -90,7 +90,8 @@ button {
   background-color: white;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-around;
+
 }
 
 
@@ -110,12 +111,13 @@ button {
   text-align: center;
 }
 
-.card> p {
+.card > p {
+  padding-top: 5px;
   text-align: left;
 
 }
 
-.card> img{
+.card  > img{
   width: 50px;
 
 
