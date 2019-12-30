@@ -44,17 +44,19 @@ a {
 }
 
 
-.containerText {
+#containerText {
   position: absolute;
   color: white;
   text-align: center;
-  top: 300px;
+  top: 150px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
-  height: 100%;
   width: 100%;
   margin-top: 0;
 }
@@ -62,28 +64,26 @@ img {
 #text {
   font-size: 65px;
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding: 40px;
 }
 
 #textH3 {
-  padding: 20px;
   font-family: 'Raleway', sans-serif;
   font-size: 22px;
+  padding: 50px;
 }
 
 button {
-  position: absolute;
   background-color: #e84545;
   color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 13px;
-  padding: 10px 20px;
+  padding: 15px 40px;
   border: 0;
+  width: 200px;
+  margin: 0 auto;
 }
-
-
-
-
-
 
 #containerCard {
   display: flex;
