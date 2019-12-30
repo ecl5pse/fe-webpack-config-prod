@@ -80,61 +80,45 @@ button {
   border: 0;
 }
 
-.containerCard {
+
+
+
+
+
+#containerCard {
   display: flex;
-  flex-direction: row;
   background-color: white;
+  flex-wrap: wrap;
   width: 100%;
+  justify-content: space-evenly;
+}
+
+
+.card{
   padding: 50px;
-  box-sizing: border-box;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
 
-
-.cardOne{
-  padding: 50px;
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  align-items: center;
-}
-
-.cardOne > h5 {
+.card > h5 {
   font-size: 14px;
   font-family: 'Raleway', sans-serif;
   padding: 10px;
   text-align: center;
 }
 
-.cardOne> p {
+.card> p {
   text-align: left;
 
 }
 
-.cardOne > img{
-  margin: 0 auto;
-  width: 75px;
+.card> img{
+  width: 50px;
+
 
 }
 
-.cardTwo {
-  display: flex;
-  width: 20%;
-  flex-direction: column;
-  padding: 50px;
-  justify-content: center;
 
-}
-
-.cardTwo > h5{
-  font-size: 14px;
-  font-family: 'Raleway', sans-serif;
-  padding: 10px;
-  text-align: center;
-}
-
-.cardTwo > img{
-  margin: 0 auto;
-  width: 100px;
-}
