@@ -1,8 +1,6 @@
 import './assets/sass/style.scss';
 import './assets/sass/reset.scss';
 
-
-
 fetch('./data/employees.json').
     then(response => response.json()).
     then(appendCardsToList).
@@ -80,23 +78,61 @@ function createCardAboutMe({aboutMe}) {
 }
 
 function createCardContact(employees) {
-  const cardContact = document.createElement("ul");
-  cardContact.classList.add("cardContact");
-  cardContact.append(createCardContainer (employees));
+  const cardContact = document.createElement('ul');
+  cardContact.classList.add('cardContact');
+  cardContact.append(createCardContainer(employees));
   return cardContact;
 
-
 }
 
-function createCardContainer (employees) {
+function createCardContainer(employees) {
 
-const  cardContainer = document.createElement("a");
-cardContainer.classList.add("cardShare");
-cardContainer.setAttribute("href","#");
-cardContainer.innerHTML ='<i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> <i class="fab fa-linkedin-in"></i>  <i class="fab fa-google-plus-g"></i>';
-return cardContainer;
+  const cardContainer = document.createElement('a');
+  cardContainer.classList.add('cardShare');
+  cardContainer.setAttribute('href', '#');
+  cardContainer.innerHTML = '<i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> <i class="fab fa-linkedin-in"></i>  <i class="fab fa-google-plus-g"></i>';
+  return cardContainer;
 }
 
 
 
+//=======SLIDER===========================////
 
+const currentSlid = 0;
+
+const slider = document.getElementById("slider");
+
+slider.appendChild( createSlider());
+
+
+function createSlider() {
+  const sliderContainer = document.createElement('div');
+  const sliderImage = document.createElement('img');
+  const sliderText = document.createElement("p");
+  const buttonNext = document.createElement('div');
+  const buttonPrev = document.createElement('div');
+  sliderContainer.classList.add("one")
+  sliderImage.setAttribute("src","./assets/images/testimonial-1.jpg");
+  sliderText.innerText="\"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo\n" +
+                       "            quam...\"";
+  buttonNext.classList.add("button");
+  buttonPrev.classList.add("button");
+  sliderContainer.append(sliderImage);
+  sliderContainer.append(sliderText);
+  sliderContainer.append(buttonNext);
+  sliderContainer.append(buttonPrev);
+
+
+
+  buttonNext.onclick = ()=>{
+    sliderImage.setAttribute("src","./assets/images/testimonial-2.jpg");
+    sliderText.innerText="\"Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur....\"";
+  }
+
+  buttonPrev.onclick = ()=>{
+    sliderImage.setAttribute("src","./assets/images/testimonial-1.jpg");
+    sliderText.innerText="\"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo\n" +
+                         "            quam...\"";
+  }
+  return sliderContainer;
+}
