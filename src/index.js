@@ -1,1 +1,0 @@
-import styles from './assets/sass/style.scss';
