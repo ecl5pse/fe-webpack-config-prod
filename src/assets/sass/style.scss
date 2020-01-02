@@ -246,4 +246,32 @@
     line-height: 22.4px;
   }
 
+
+  .cardContact {
+
+  }
+
+  .cardShare {
+    text-decoration: none;
+    line-height: 40px;
+
+
+  }
+
+  i{
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: inherit;
+    padding-top: 5px;
+    font: normal normal normal 20px/1 FontAwesome;
+    width: 40px;
+    border: 1px solid #e8ecee;
+    text-align: center;
+    height: 40px;
+    margin-top: 20px;
+  }
+
+  i:hover{
+    background-color: #e84545;
+  }
 }

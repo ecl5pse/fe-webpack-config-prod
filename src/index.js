@@ -2,6 +2,7 @@ import './assets/sass/style.scss';
 import './assets/sass/reset.scss';
 
 
+
 fetch('./data/employees.json').
     then(response => response.json()).
     then(appendCardsToList).
@@ -26,6 +27,7 @@ function createCardsList(employees) {
   cardListItem.appendChild(createCardsFullName(employees));
   cardListItem.appendChild(createCardWork(employees));
   cardListItem.appendChild(createCardAboutMe(employees));
+  cardListItem.appendChild(createCardContact(employees));
 
   return cardListItem;
 
@@ -75,6 +77,24 @@ function createCardAboutMe({aboutMe}) {
   cardsAboutMe.classList.add('cardsAboutMe');
   cardsAboutMe.innerText = `${aboutMe}`;
   return cardsAboutMe;
+}
+
+function createCardContact(employees) {
+  const cardContact = document.createElement("ul");
+  cardContact.classList.add("cardContact");
+  cardContact.append(createCardContainer (employees));
+  return cardContact;
+
+
+}
+
+function createCardContainer (employees) {
+
+const  cardContainer = document.createElement("a");
+cardContainer.classList.add("cardShare");
+cardContainer.setAttribute("href","#");
+cardContainer.innerHTML ='<i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> <i class="fab fa-linkedin-in"></i>  <i class="fab fa-google-plus-g"></i>';
+return cardContainer;
 }
 
 
