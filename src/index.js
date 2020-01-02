@@ -102,22 +102,24 @@ const currentSlid = 0;
 
 const slider = document.getElementById("slider");
 
-slider.appendChild( createSlider());
+slider.appendChild(createSlider());
 
 
 function createSlider() {
+
   const sliderContainer = document.createElement('div');
   const sliderImage = document.createElement('img');
   const sliderText = document.createElement("p");
   const buttonNext = document.createElement('div');
   const buttonPrev = document.createElement('div');
-  sliderContainer.classList.add("one")
+  sliderContainer.classList.add("sliderContainer");
   sliderImage.setAttribute("src","./assets/images/testimonial-1.jpg");
   sliderText.innerText="\"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo\n" +
                        "            quam...\"";
   buttonNext.classList.add("button");
   buttonPrev.classList.add("button");
-  sliderContainer.append(sliderImage);
+
+  sliderContainer.append(sliderImage)
   sliderContainer.append(sliderText);
   sliderContainer.append(buttonNext);
   sliderContainer.append(buttonPrev);
@@ -134,5 +136,6 @@ function createSlider() {
     sliderText.innerText="\"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo\n" +
                          "            quam...\"";
   }
-  return sliderContainer;
+
+  return  sliderContainer;
 }
