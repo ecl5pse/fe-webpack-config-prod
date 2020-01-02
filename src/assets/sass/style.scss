@@ -1,0 +1,361 @@
+@import './src/assets/sass/reset.scss';
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+
+#pageHeader {
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-height: 350px;
+  width: 100%;
+  background-color: rgba(41, 44, 71, 1);
+
+
+  .containerLogo {
+    img {
+      height: 25px;
+      width: 200px;
+    }
+  }
+
+  .navHeaderContainer {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+
+
+  }
+
+
+  .navHeader {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+
+    a {
+      margin: 0 20px;
+      color: white;
+      font-size: 13px;
+      text-decoration: none;
+      font-family: 'Raleway', sans-serif;
+    }
+
+
+  }
+}
+
+#containerText {
+  background-image: url("../images/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+  button {
+    background-color: #e84545;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    padding: 15px 40px;
+    border: 0;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+}
+
+
+#text {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 65px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding: 100px;
+
+}
+
+#textH3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  text-align: center;
+  padding: 50px;
+}
+
+
+#containerCard {
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+
+
+  .card {
+    padding: 50px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+
+    h5 {
+      font-size: 14px;
+      font-family: 'Raleway', sans-serif;
+      padding: 10px;
+      text-align: center;
+    }
+
+    p {
+      padding-top: 5px;
+      text-align: center;
+      width: 250px;
+
+    }
+
+    img {
+      width: 50px;
+    }
+  }
+}
+
+#containerImage {
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+  .imag {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1px;
+
+    img {
+      width: 300px;
+
+    }
+
+  }
+
+  .item {
+    height: 162px;
+    width: 300px;
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .item:hover {
+    background: rgba(232, 69, 69, .9);;
+    opacity: 1;
+    transition: 1s;
+
+    h5 {
+      color: white;
+      padding: 5px;
+    }
+
+    p {
+      color: white;
+      padding: 5px;
+    }
+
+  }
+}
+
+#cardsList {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 50px;
+  font-family: 'Raleway', sans-serif;
+
+
+  .cardListItem {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 200px;
+    max-width: 300px;
+    flex-basis: 300px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    color: black;
+
+  }
+
+
+  .profilePictureContainer {
+
+    width: 250px;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
+
+    img {
+      left: 50%;
+      top: 50%;
+
+    }
+  }
+
+  .cardsFullName {
+    font-size: 22px;
+    padding: 10px 0;
+    font-weight: 400;
+  }
+
+  .cardsWork {
+    font-size: 13px;
+    padding: 2px 0;
+    color: #e84545;
+  }
+
+  .cardsAboutMe{
+    font-size: 14px;
+    padding: 10px 0;
+    line-height: 22.4px;
+  }
+
+
+  .cardContact {
+
+  }
+
+  .cardShare {
+    text-decoration: none;
+    line-height: 40px;
+
+
+  }
+
+  i{
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: inherit;
+    padding-top: 5px;
+    font: normal normal normal 20px/1 FontAwesome;
+    width: 40px;
+    border: 1px solid #e8ecee;
+    text-align: center;
+    height: 40px;
+    margin-top: 20px;
+  }
+
+  i:hover{
+    background-color: #e84545;
+  }
+}
+
+#slider{
+  width: 100%;
+  height: 340px;
+  background-color:rgba(83, 53, 74, 1);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  box-sizing: border-box;
+
+.sliderContainer{
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+  img{
+    width: 675px;
+    height: 340px;
+
+  }
+
+  p{
+    padding-top: 50px;
+    display: inline-flex;
+    width: 450px;
+    text-align: center;
+    padding-left: 40px;
+    height: 2px;
+    font: italic 36px "Cardo", Georgia, "Times New Roman", serif;
+    color: white;
+  }
+
+  .button{
+    justify-content: flex-end;
+    display: inline-flex;
+    padding: 5px;
+    margin-top: 300px;
+    margin-left: -140px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+}
+
+#download{
+  width: 100% ;
+  height: 400px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+
+  h2{
+    font-size: 28px;
+    padding: 20px;
+  }
+
+  p{
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  button{
+  color: white;
+  background-color: #e84545;
+  border: 0;
+  font-size: 15px;
+  height: 50px;
+  width: 200px;
+}
+
+  button:hover{
+    transform: rotate(10deg);
+    animation: 15s;
+  }
+
+}
