@@ -109,18 +109,19 @@ function createSlider() {
 
   const sliderContainer = document.createElement('div');
   const sliderImage = document.createElement('img');
-  const sliderText = document.createElement("p");
-  const buttonNext = document.createElement('div');
-  const buttonPrev = document.createElement('div');
+  const sliderText = document.createElement("h3");
+  const  text = document.createElement("p");
+  const buttonNext = document.createElement('button');
+  const buttonPrev = document.createElement('button');
   sliderContainer.classList.add("sliderContainer");
   sliderImage.setAttribute("src","./assets/images/testimonial-1.jpg");
   sliderText.innerText="\"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo\n" +
                        "            quam...\"";
-  buttonNext.classList.add("button");
-  buttonPrev.classList.add("button");
 
+  text.innerText= "SUSAN SIMS, INTERACTION DESIGNER AT XYZ"
   sliderContainer.append(sliderImage)
   sliderContainer.append(sliderText);
+  sliderContainer.append(text);
   sliderContainer.append(buttonNext);
   sliderContainer.append(buttonPrev);
 
