@@ -115,8 +115,7 @@ function createSlider() {
   const buttonPrev = document.createElement('button');
   sliderContainer.classList.add("sliderContainer");
   sliderImage.setAttribute("src","./assets/images/testimonial-1.jpg");
-  sliderText.innerText="\"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo\n" +
-                       "            quam...\"";
+  sliderText.innerText="\"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo\n";
 
   text.innerText= "SUSAN SIMS, INTERACTION DESIGNER AT XYZ"
   sliderContainer.append(sliderImage)
@@ -130,13 +129,13 @@ function createSlider() {
   buttonNext.onclick = ()=>{
     sliderImage.setAttribute("src","./assets/images/testimonial-2.jpg");
     sliderText.innerText="\"Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur....\"";
-  }
+  };
 
   buttonPrev.onclick = ()=>{
     sliderImage.setAttribute("src","./assets/images/testimonial-1.jpg");
     sliderText.innerText="\"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo\n" +
                          "            quam...\"";
-  }
+  };
 
   return  sliderContainer;
 }
