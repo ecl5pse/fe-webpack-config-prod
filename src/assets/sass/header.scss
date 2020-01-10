@@ -1,0 +1,42 @@
+
+
+#pageHeader {
+  position:fixed;
+  top: 0;
+  padding: 15px;
+  margin: 0 auto;
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  width: 50%;
+  background-color: rgba(41, 44, 71, 1);
+  box-sizing: border-box;
+
+  .containerLogo {
+    img {
+      width: 200px;
+    }
+  }
+  .navHeaderContainer {
+    display: none;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+  .navHeader {
+    display: none;
+    flex-direction: row;
+    box-sizing: border-box;
+    a {
+      margin: 0 20px;
+      color: white;
+      font-size: 13px;
+      text-decoration: none;
+      font-family: 'Raleway', sans-serif;
+    }
+
+  }
+
+}

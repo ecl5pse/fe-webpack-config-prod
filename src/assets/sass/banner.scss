@@ -1,0 +1,48 @@
+
+#containerText {
+  padding: 40px;
+  background-image: url("../images/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 750px;
+
+
+  #text {
+    padding-top: 25px;
+    display: flex;
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+
+  }
+
+  #textH3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 25px;
+    line-height: 1.5;
+  }
+
+  button {
+    background-color: #e84545;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    padding: 15px 40px;
+    border: 0;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+}

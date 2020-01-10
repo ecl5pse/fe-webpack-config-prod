@@ -39,7 +39,6 @@
     "last 3 version"
   ],
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.8",
-    "lodash": "^4.17.15"
+    "@fortawesome/fontawesome": "^1.1.8"
   }
 }
