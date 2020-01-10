@@ -9,31 +9,32 @@
   #pageHeader {
     position: fixed;
     top: 0;
-    padding: 20px;
+    padding: 25px;
     margin: 0 auto;
-    display: flex;
+    display: block;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 100%;
+    max-width: 1000px;
+    width: 50%;
     background-color: rgba(41, 44, 71, 1);
     box-sizing: border-box;
+
     .containerLogo {
       img {
-        height: 25px;
+
         width: 200px;
       }
     }
-
     .navHeaderContainer {
-      display: flex;
+      display: none;
       box-sizing: border-box;
       flex-direction: row;
       flex-wrap: wrap;
 
     }
     .navHeader {
-      display: flex;
+      display: none;
       flex-direction: row;
       box-sizing: border-box;
 
@@ -48,6 +49,7 @@
     }
 
   }
+
 
 #containerText {
   background-image: url("../images/banner.jpg");
@@ -78,12 +80,11 @@
 
 
 #text {
+  padding-top: 50px;
   display: flex;
-  flex-wrap: wrap;
   font-size: 65px;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  padding: 100px;
 
 }
 
@@ -176,7 +177,7 @@
   .item:hover {
     background: rgba(232, 69, 69, .9);
     opacity: 1;
-    transition: 1.5s;
+    transition: 1s;
 
     h5 {
 
