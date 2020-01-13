@@ -1,42 +1,117 @@
-
+@import "break-point";
 
 #pageHeader {
-  position:fixed;
+  position: fixed;
   top: 0;
-  padding: 15px;
-  margin: 0 auto;
-  display: block;
-  flex-direction: row;
-  flex-wrap: wrap;
+  padding: 20px;
   max-width: 1170px;
-  width: 50%;
+  width: 100%;
   background-color: rgba(41, 44, 71, 1);
-  box-sizing: border-box;
 
   .containerLogo {
+    width: 189px;
+    display: flex;
+    flex-direction: column;
+    padding-left: -20px;
+    align-self: flex-start;
+    justify-content: space-between;
+
     img {
-      width: 200px;
+      height: 24px;
+      width: 189px;
     }
   }
-  .navHeaderContainer {
-    display: none;
-    box-sizing: border-box;
-    flex-direction: row;
-    flex-wrap: wrap;
 
-  }
-  .navHeader {
-    display: none;
-    flex-direction: row;
-    box-sizing: border-box;
-    a {
-      margin: 0 20px;
-      color: white;
-      font-size: 13px;
-      text-decoration: none;
-      font-family: 'Raleway', sans-serif;
-    }
-
+  #menu__toggle {
+    opacity: 0;
   }
 
+  .menu__btn {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+    border: 10px;
+    background-color: #e84545;
+    margin-top: -20px;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+
+    background-color: #e3e3e3;
+
+  }
+
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+
+  .menu__box {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    position: fixed;
+    visibility: hidden;
+    justify-content: space-between;
+    padding: 5px;
+    border: 1px solid white;
+    flex-direction: column;
+    top: 200px;
+    left: 100px;
+    text-align: center;
+    background-color: #bf3491;
+  }
+
+  .menu__item {
+    padding: 5px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .menu__item:hover {
+    background-color: #e84545;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    background-color: #b9b9bf;
+    left: 0;
+
+
+  }
 }

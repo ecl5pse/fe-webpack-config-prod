@@ -1,57 +1,41 @@
 [
   {
-    "id": "1",
-    "name": "Ruth",
-    "surname": "Wood",
-    "work": "FOUNDER , CEO",
-    "aboutMe": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, a. Nullam quis risus eget urna mollis ornare vel eu leo.",
-    "contacts": {
-      "facebook": "https://uk-ua.facebook.com",
-      "twitter": "https://twitter.com ",
-      "google +": "https://aboutme.google.com"
-    },
-    "profilePicture": "./assets/images/team-1.jpg"
+    "name": "Test",
+    "surname": "Testovich",
+    "position": "tester",
+    "info": "sl;dkf ;lksajd fl;saj f;lkaj f;ljasdplkfjlasjfplasjfdiohs dfihgsjidf isahgf iuahf",
+    "contacts": [
+      "https://facebook.com/id-opsdf",
+      "https://facebook.com/id-opsdf",
+      "https://facebook.com/id-opsdf",
+      "https://facebook.com/id-opsdf",
+      "https://facebook.com/id-opsdf"
+    ]
   },
   {
-    "id": "2",
-    "name": "Timothy",
-    "surname": "Reed",
-    "work": "CO-FOUNDER, DEVELOPER",
-    "aboutMe": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.",
-
-    "contacts": {
-      "facebook": "https://uk-ua.facebook.com",
-      "twitter": "https://twitter.com ",
-      "google +": "https://aboutme.google.com"
-    },
-    "profilePicture": "./assets/images/team-2.jpg"
+    "name": "Test",
+    "surname": "Testovich",
+    "position": "tester",
+    "info": "sl;dkf ;lksajd fl;saj f;lkaj f;ljasdplkfjlasjfplasjfdiohs dfihgsjidf isahgf iuahf",
+    "contacts": [
+      "https://facebook.com/id-opsdf",
+      "https://facebook.com/id-opsdf",
+      "https://facebook.com/id-opsdf",
+      "https://facebook.com/id-opsdf",
+      "https://facebook.com/id-opsdf"
+    ]
   },
   {
-    "id": "3",
-    "name": "Victoria",
-    "surname": "Valdez",
-    "work": "UI DESIGNER",
-    "aboutMe": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.",
-
-    "contacts": {
-      "facebook": "https://uk-ua.facebook.com",
-      "twitter": "https://twitter.com ",
-      "google +": "https://aboutme.google.com"
-  },
-    "profilePicture": "./assets/images/team-3.jpg"
-  },
-  {
-    "id": "4",
-    "name": "Beverly",
-    "surname": "Little",
-    "work": "DATA SCIENTIST",
-    "aboutMe": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.",
-
-    "contacts": {
-      "facebook": "https://uk-ua.facebook.com",
-      "twitter": "https://twitter.com ",
-      "google +": "https://aboutme.google.com "
-    },
-    "profilePicture": "./assets/images/team-4.jpg"
+    "name": "Test",
+    "surname": "Testovich",
+    "position": "tester",
+    "info": "sl;dkf ;lksajd fl;saj f;lkaj f;ljasdplkfjlasjfplasjfdiohs dfihgsjidf isahgf iuahf",
+    "contacts": [
+      "https://facebook.com/id-opsdf",
+      "https://facebook.com/id-opsdf",
+      "https://facebook.com/id-opsdf",
+      "https://facebook.com/id-opsdf",
+      "https://facebook.com/id-opsdf"
+    ]
   }
 ]
