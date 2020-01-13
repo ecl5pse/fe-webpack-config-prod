@@ -1,117 +1,156 @@
 @import "break-point";
 
 #pageHeader {
+  display: flex;
+  align-items: center;
+  align-self: center;
   position: fixed;
   top: 0;
   padding: 20px;
   max-width: 1170px;
-  width: 100%;
+  width: 80%;
   background-color: rgba(41, 44, 71, 1);
 
+  @media screen and (min-width: $lg) {
+    padding: 10px;
+    min-width: 100%;
+
+    .containerLogo {
+      margin-left: 100px;
+
+    }
+  }
+
   .containerLogo {
+    padding: 20px;
     width: 189px;
     display: flex;
     flex-direction: column;
-    padding-left: -20px;
     align-self: flex-start;
-    justify-content: space-between;
-
     img {
+
       height: 24px;
       width: 189px;
     }
   }
+}
 
-  #menu__toggle {
-    opacity: 0;
+
+.navigation-open {
+  opacity: 0.9;
+  transition: opacity 0.5s;
+  position: fixed;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  @media screen and (min-width: $lg) {
+    display: none;
   }
 
-  .menu__btn {
-    display: flex;
-    align-self: flex-start;
-    align-items: center;
-    flex-direction: row-reverse;
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    z-index: 1;
-    border-radius: 50%;
-    border: 10px;
-    background-color: #e84545;
+}
+
+.navContainer {
+  display: none;
+  justify-content: space-between;
+  width: 538px;
+
+  @media screen and (min-width: $lg) {
+    display: inline-flex;
+    margin-left: 500px;
     margin-top: -20px;
-  }
-
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 1px;
-
-    background-color: #e3e3e3;
-
-  }
-
-  .menu__btn > span::before {
-    content: '';
-    top: -8px;
-  }
-
-  .menu__btn > span::after {
-    content: '';
-    top: 8px;
-  }
-
-  .menu__box {
-    width: 100%;
-    height: 200px;
-    display: flex;
     position: fixed;
-    visibility: hidden;
-    justify-content: space-between;
-    padding: 5px;
-    border: 1px solid white;
-    flex-direction: column;
-    top: 200px;
-    left: 100px;
-    text-align: center;
-    background-color: #bf3491;
+    padding-left: 270px;
   }
 
-  .menu__item {
-    padding: 5px;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-  }
+  li {
+    margin: 0;
 
-  .menu__item:hover {
-    background-color: #e84545;
-  }
+    a {
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.75);
+      font: 13px Raleway, sans-serif;
+      font-weight: 100;
 
-  #menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-  }
+    }
 
-  #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-
-  #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-
-  #menu__toggle:checked ~ .menu__box {
-    visibility: visible;
-    background-color: #b9b9bf;
-    left: 0;
-
+    a:hover {
+      color: #fff;
+    }
 
   }
 }
+
+
+.primary-nav {
+  display: block;
+  position: relative;
+  top: 25%;
+  left: calc(50% - 5vw);
+
+  @media screen and (min-width: $lg) {
+    left: calc(50% - 12vw);
+  }
+
+
+  li {
+    display: block;
+    margin-bottom: 20px;
+
+    a {
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.75);
+      font: 25px Raleway, sans-serif;
+      font-weight: 100;
+
+    }
+
+    a:hover {
+      color: white;
+    }
+  }
+}
+
+.btn-nav-toggle {
+  left: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  position: fixed;
+  background-color: #e84545;
+  border-radius: 50%;
+  cursor: pointer;
+
+  div {
+    width: 18px;
+    height: 3px;
+    background: white;
+    margin-bottom: 3px;
+    transform-origin: left center;
+  }
+
+  @media screen and (min-width: $lg) {
+    display: none;
+  }
+}
+
+.btnToggleRotate > div:first-child {
+  transform: rotate(43deg);
+  margin-left: 5px;
+}
+
+.btnToggleRotate > div:last-child {
+  transform: rotate(-43deg);
+  margin-left: 5px;
+}
+
+.btnToggleRotate > div:nth-child(2) {
+  opacity: 0;
+}
+

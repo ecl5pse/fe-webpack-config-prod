@@ -1,5 +1,7 @@
 import './assets/sass/style.scss';
+import './assets/sass/header.scss';
 import './assets/sass/reset.scss';
+/*
 
 fetch('./data/employees.json').
     then(response => response.json()).
@@ -139,3 +141,4 @@ function createSlider() {
 
   return  sliderContainer;
 }
+*/

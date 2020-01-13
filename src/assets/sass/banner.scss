@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  max-width: 100%;
+  width: 100%;
   box-sizing: border-box;
   min-height: 750px;
 
@@ -23,6 +23,12 @@
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 
+    @media screen  and  (min-width: $lg){
+      width: 350px;
+      margin: 0 auto;
+    }
+
+
   }
 
   #textH3 {
@@ -31,9 +37,19 @@
     text-align: center;
     padding-top: 25px;
     line-height: 1.5;
+    @media screen  and  (min-width: $lg){
+      width: 50%;
+      margin: 0 auto;
+      padding: 50px;
+    }
+
   }
 
   button {
+    @media screen  and  (min-width: $lg){
+
+      margin: 10px auto;
+    }
     background-color: #e84545;
     color: white;
     font-family: 'Raleway', sans-serif;

@@ -8,6 +8,13 @@
   flex-wrap: wrap;
   justify-content: center;
 
+  @media screen and (min-width: $lg){
+    flex-direction: row;
+    width: 75%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
 
   .imag {
     width: 350px;
