@@ -1,16 +1,10 @@
 import createUserCard from './components/UserCard';
-import './styles.scss';
 
-/**
- *
- * @param {Array<object>} users
- * @return
- */
-export default function (users) {
-  const listContainer = document.createElement( 'div' );
+export default function (employees) {
+  const listContainer = document.getElementById('cardContainer')
 
-  users.forEach( user => {
-    listContainer.appendChild( createUserCard( user ) );
+  employees.forEach( employees => {
+    listContainer.appendChild( createUserCard(employees) );
   } );
   return listContainer;
 }

@@ -1,38 +1,12 @@
 import './styles.scss';
-import createPicture from '../../../Picture';
+import createPicture  from '../../../Picture';
+import userCardElem from './userCardElem';
+import createSocialNetworksLinksList from '../../../ContactLink';
 
 
-export default function (user) {
+
+export default function (employees) {
   const cardContainer = document.createElement( 'div' );
-  const userPicture = createPicture( user.profilePicture, '/assets/user_icon.png', 'profile picture', ['userImg', '', 'sldf'] );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  cardContainer.appendChild( userPicture );
+  cardContainer.appendChild(userCardElem(employees));
   return cardContainer;
 }

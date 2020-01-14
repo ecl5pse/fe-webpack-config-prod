@@ -4,38 +4,41 @@
     "surname": "Wood",
     "position": "FOUNDER , CEO ",
     "info": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.",
+    "userAvatar": "./assets/images/team-1.jpg",
     "contacts": [
-      "https://facebook.com/id-opsdf",
-      "https://blog.twitter.com",
-      "https://aboutme.google.com/u/0/?referer=gplus",
-      "https://facebook.com/id-opsdf",
-      "https://facebook.com/id-opsdf"
+      "https://facebook.com",
+      "https://twitter.com",
+      "https://linkedin.com",
+      "https://google.com",
+      "https://dribble.com"
     ]
   },
   {
     "name": "Timothy",
     "surname": "Reed",
     "position": "CO-FOUNDER, DEVELOPER",
-    "info": "sl;dkf ;lksajd fl;saj f;lkaj f;ljasdplkfjlasjfplasjfdiohs dfihgsjidf isahgf iuahf",
+    "info": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.",
+    "userAvatar": "./assets/images/team-2.jpg",
     "contacts": [
-      "https://facebook.com/id-opsdf",
-      "https://blog.twitter.com",
-      "https://aboutme.google.com/u/0/?referer=gplus",
-      "https://facebook.com/id-opsdf",
-      "https://facebook.com/id-opsdf"
+      "https://facebook.com",
+      "https://twitter.com",
+      "https://linkedin.com",
+      "https://google.com",
+      "https://dribble.com"
     ]
   },
   {
     "name": "Victoria",
     "surname": "Victoria",
     "position": "UI DESIGNER",
-    "info": "sl;dkf ;lksajd fl;saj f;lkaj f;ljasdplkfjlasjfplasjfdiohs dfihgsjidf isahgf iuahf",
+    "info": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.",
+    "userAvatar": "./assets/images/team-3.jpg",
     "contacts": [
-      "https://facebook.com/id-opsdf",
-      "https://blog.twitter.com",
-      "https://aboutme.google.com/u/0/?referer=gplus",
-      "https://facebook.com/id-opsdf",
-      "https://facebook.com/id-opsdf"
+      "https://facebook.com",
+      "https://twitter.com",
+      "https://linkedin.com",
+      "https://google.com",
+      "https://dribble.com"
     ]
   },
   {
@@ -43,12 +46,13 @@
     "surname": "Little",
     "position": "DATA SCIENTIST",
     "info": "sl;dkf ;lksajd fl;saj f;lkaj f;ljasdplkfjlasjfplasjfdiohs dfihgsjidf isahgf iuahf",
+    "userAvatar": "./assets/images/team-4.jpg",
     "contacts": [
-      "https://facebook.com/id-opsdf",
-      "https://blog.twitter.com",
-      "https://aboutme.google.com/u/0/?referer=gplus",
-      "https://facebook.com/id-opsdf",
-      "https://facebook.com/id-opsdf"
+      "https://facebook.com",
+      "https://twitter.com",
+      "https://linkedin.com",
+      "https://google.com",
+      "https://dribble.com"
     ]
   }
 ]

@@ -1,0 +1,102 @@
+#cardsList {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 50px;
+  font-family: 'Raleway', sans-serif;
+
+
+  .profilePictureContainer {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
+
+    img {
+      left: 50%;
+      top: 50%;
+
+    }
+  }
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    background-color: white;
+    box-sizing: border-box;
+    margin: 0 auto;
+    color: black;
+
+  }
+
+.cardListItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: -10px;
+  padding-top: 25px;
+
+
+  .cardsFullName {
+    font-size: 22px;
+    padding: 10px 0;
+    font-weight: 400;
+  }
+
+  .cardsWork {
+    font-size: 13px;
+    padding: 2px 0;
+    color: #e84545;
+  }
+
+  .cardsAboutMe {
+    font-size: 14px;
+    padding: 10px 0;
+    line-height: 22.4px;
+  }
+}
+  .social-icons {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    align-content: center;
+    margin-left: -20px;
+
+    li {
+      display: inline-block;
+      border: 1px solid silver;
+      padding: 10px;
+      color: rgba(198, 202, 204, 1);
+      box-sizing: border-box;
+
+    }
+
+    a {
+      border-width: 1px;
+      font: normal normal normal 25px/1 FontAwesome;
+      color: rgba(198, 202, 204, 1);
+
+    }
+
+    a {
+      color: white;
+    }
+
+    li:hover {
+      color: white;
+      background-color: #e84545;
+    }
+
+    i {
+      color: #c6cacc;
+    }
+  }
+
+
+}
+
+
