@@ -14,7 +14,9 @@
   width: 100%;
   box-sizing: border-box;
   min-height: 750px;
-
+  @media screen  and  (min-width: $md){
+    width: 100%;
+  }
 
   #text {
     padding-top: 20px;
@@ -50,6 +52,11 @@
 
       margin: 10px auto;
     }
+    @media screen  and  (min-width: $md){
+
+      margin: 10px auto;
+    }
+
     background-color: #e84545;
     color: white;
     font-family: 'Raleway', sans-serif;

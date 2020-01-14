@@ -1,25 +1,34 @@
 @import "break-point";
 
 #pageHeader {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   align-self: center;
   position: fixed;
-  top: 0;
-  padding: 20px;
+  padding: 10px 1px 10px;
   max-width: 1170px;
-  width: 80%;
+  width: 100%;
   background-color: rgba(41, 44, 71, 1);
 
   @media screen and (min-width: $lg) {
-    padding: 10px;
-    min-width: 100%;
+   max-width: 100%;
 
     .containerLogo {
       margin-left: 100px;
 
     }
   }
+
+  @media screen and (min-width: $md) {
+    padding: 10px;
+    min-width: 745px;
+
+    .containerLogo {
+      margin-left: 100px;
+
+    }
+  }
+
 
   .containerLogo {
     padding: 20px;
@@ -64,6 +73,8 @@
     position: fixed;
     padding-left: 270px;
   }
+
+
 
   li {
     margin: 0;
@@ -138,6 +149,11 @@
   @media screen and (min-width: $lg) {
     display: none;
   }
+
+  @media screen and (min-width: $md) {
+    left: 700px;
+  }
+
 }
 
 .btnToggleRotate > div:first-child {
