@@ -1,0 +1,87 @@
+#cardsList {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 50px;
+  font-family: 'Raleway', sans-serif;
+
+
+  .cardListItem {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 200px;
+    max-width: 300px;
+    flex-basis: 300px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    color: black;
+
+  }
+
+
+  .profilePictureContainer {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
+
+    img {
+      left: 50%;
+      top: 50%;
+
+    }
+  }
+
+  .cardsFullName {
+    font-size: 22px;
+    padding: 10px 0;
+    font-weight: 400;
+  }
+
+  .cardsWork {
+    font-size: 13px;
+    padding: 2px 0;
+    color: #e84545;
+  }
+
+  .cardsAboutMe{
+    font-size: 14px;
+    padding: 10px 0;
+    line-height: 22.4px;
+  }
+
+
+  .cardContact {
+
+  }
+
+  .cardShare {
+    text-decoration: none;
+    line-height: 40px;
+  }
+
+  i{
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: inherit;
+    padding-top: 5px;
+    font: normal normal normal 23px/1 FontAwesome;
+    width: 40px;
+    border: 1px solid #e8ecee;
+    text-align: center;
+    height: 40px;
+    margin-top: 20px;
+    color: rgba(198, 202, 204, 1);
+
+  }
+
+  i:hover{
+    background-color: #e84545;
+    color: white;
+  }
+}
+
+
