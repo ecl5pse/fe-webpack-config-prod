@@ -21,6 +21,7 @@ const config = {
                                from: '../src/data', to: '../build/data',
                              }] ),
     new MiniCssExtractPlugin( ),
+
     new HtmlWebpackPlugin( {
                              template: 'index.html',
                              meta: {
