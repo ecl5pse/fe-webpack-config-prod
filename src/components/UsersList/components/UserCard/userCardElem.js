@@ -6,7 +6,7 @@ import createSocialNetworksLinksList from '../../../ContactLink';
 export default function(employees) {
 
   const userCardElem = document.createElement('div');
-  const userPicture = createPicture( employees.userAvatar, '/assets/images/Layer 43.png', 'profile picture', ['profilePictureContainer'] );
+  const userPicture = createPicture( employees.userAvatar, '/assets/images/avatorUser.png', 'profile picture', ['profilePictureContainer'] );
   userCardElem.classList.add('cardListItem');
   userCardElem.appendChild(userPicture);
   userCardElem.appendChild(textElements(employees));
